@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pet Pal</title>
+  <style>
+    body {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/033/860/064/non_2x/golden-retriever-running-in-the-field-on-a-sunny-day-golden-retriever-dog-running-in-the-field-with-blurred-background-ai-generated-free-photo.jpg");
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        transition: background-image 10s ;
+    }
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(63, 149, 151, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em;
+      box-sizing: border-box;
+      z-index: 1;
+    }
+    .navbar a {
+      color: #2f3854;
+      text-decoration: none;
+      font-size: 1.5em;
+      margin-right: 1em;
+    }
+    .navbar a:hover {
+      color: #982020;
+    }
+    .container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-align: center;
+      margin: 0 auto;
+      width: 80%;
+    }
+    h1 {
+      font-size: 3em;
+      color: #030903;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.5em;
+      color: #0a0a0a;
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+   
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="servise.html">Services</a>
+    <a href="./contact/contact.html">Contact</a>
+    <a href="#">Account</a>
+  </nav>
+  <div class="container">
+    <h1>Welcome to Pet Pal!</h1>
+    <p>Nourishing pets , Nurturing bonds.</p>
+  </div>
+  <script>
+    const images = [
+    "https://www.daysoftheyear.com/wp-content/uploads/international-cat-day1-scaled.jpg",
+      'https://www.northamptondogwalker.co.uk/wp-content/uploads/2017/06/thomas9.jpg',
+      'https://i.natgeofe.com/n/0f2596fc-c49c-4718-b884-b6279fd6785e/MM9968_220714_01697_2x1.jpg',
+      "https://images.pexels.com/photos/2317904/pexels-photo-2317904.jpeg"
+    ];
+    let currentImage = 0;
+    setInterval(() => {
+      currentImage = (currentImage + 1) % images.length;
+      document.body.style.backgroundImage = `url(${images[currentImage]})`;
+    }, 10000);
+  </script>
+</body>
+</html>

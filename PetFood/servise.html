@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <style>
+    body {
+    font-family: DejaVu Sans Mono, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    box-sizing: border-box;
+    z-index: 1;
+    background-color: rgba(168, 211, 212, 0.9);
+}
+
+.navbar a {
+    color: #2f3854;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.navbar a:hover {
+    color: #982020;
+}
+
+.supplies-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(7, 1, 1);
+    border-radius: 50%;
+}
+
+.supplies-container a {
+    margin: 0 10px;
+}
+
+.supply-item {
+    text-align: center;
+}
+
+.animal {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.animal img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.animal:hover img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+.animal:hover .details {
+    opacity: 1;
+}
+
+  </style>
+   <nav class="navbar">
+    <a href="homepage.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="servise.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="#">Account</a>
+  </nav>
+
+  <h1>Services:</h1>
+  <center>
+    <h2>Adopt!</h2>
+    <div class="supplies-container">
+        <div class="animal">
+            <img src="https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-6/438238541_7408249535897641_306231219697697028_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=32XqYiPWX_IQ7kNvgHI7dQR&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfBMZHHfR5We9i35EN3qJ8b978Kg51TqMAylsZy9BEnFpg&oe=66413120" alt="Cat">
+            <div class="details">
+                <h3>Male Cat</h3>
+                <p>Litter trained</p>
+                <p>Date of Birth: January 1, 2023</p>
+            </div>
+        </div>
+        
+        <div class="animal">
+            <img src="dog.jpg" alt="Dog">
+            <div class="details">
+                <h3>Dog</h3>
+                <p>Breed: Labrador Retriever</p>
+                <p>Date of Birth: March 15, 2019</p>
+            </div>
+        </div>
+
+        <div class="animal">
+            <img src="bird.jpg" alt="Bird">
+            <div class="details">
+                <h3>Bird</h3>
+                <p>Breed: Parakeet</p>
+                <p>Date of Birth: December 5, 2018</p>
+            </div>
+        </div>
+    </div>
+
+    <h2>Supplies!</h2>
+    <h2>Kibbles:</h2>
+    <div class="supplies-container">
+        <div class="supply-item">
+            <a href="cat.html"><img src="https://i.pinimg.com/564x/cf/78/67/cf7867ab0820a49566d86a53e6a58233.jpg" alt="Cat Food"></a>
+            <p>Cat Food</p>
+        </div>
+        
+        <div class="supply-item">
+            <a href="dog.html"><img src="https://i.pinimg.com/564x/dd/1e/db/dd1edbcff0165a3a2334f64edc22050d.jpg" alt="Dog Food"></a>
+            <p>Dog Food</p>
+        </div>
+        
+        <div class="supply-item">
+            <a href="bird.html"><img src="https://i.pinimg.com/564x/14/e4/df/14e4df4bd20deee170370829eaab4c7c.jpg" alt="Bird Food"></a>
+            <P>Bird Food</P>
+        </div>
+        
+        <div class="supply-item">
+            <a href="product.html"><img src="https://i.pinimg.com/564x/3c/ca/9d/3cca9de4378a97e6ed5ac743362867fc.jpg" alt="animal supplies"></a>
+            <P>Supplies</P>
+        </div>
+    </div>
+</center>
+</body>
+</html>

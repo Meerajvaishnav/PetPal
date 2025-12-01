@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Accessories</title>
+    <link rel="stylesheet" href="stylesheet.css"/>
+</head>
+<body>
+    <style>
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(168, 211, 212, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-sizing: border-box;
+            z-index: 1;
+          }
+          .navbar a {
+            color: #0e6820;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 1em;
+          }
+          .navbar a:hover {
+            color: #982020;
+          }
+    </style>
+    <nav class="navbar">
+        <a href="homepage.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="servise.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Account</a>
+      </nav>
+    <div class="search-box">
+        <input type="text" placeholder="Search for items here..." id="searchInput">
+            <button type="button" id="searchButton">Search</button>
+    </div>
+    <div id="searchResults"></div>
+        <div class="icons">
+            <a href="servise.html" class="home-icon"><img src="arrow.png" alt="Home"></a>
+            <a href="cart.html" class="cart-icon" target="_blank"><img src="cart.png" alt="Add to Cart"></a>
+        </div>
+        <div class="banner">
+            <video class="desktop-video" autoplay="autoplay" loop="loop" muted="muted" playsinline="" width="1520" height="450">
+               <source src="https://zigly-happy-pets.s3.ap-south-1.amazonaws.com/videos/playful-temptations-desktop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h2>For your Dog</h2>
+          <div id="dog" class="dog-container">
+           <div class="product " data-name="Dog Collar" data-price="500">
+               <img src="dog collar.jpeg" alt="dog collar" >
+               <h3>Dog Collar</h3>
+               <p>Rs.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product" data-name="Dog Collar" data-price="550">
+               <img src="dog collar1.jpeg" alt="dog collar" >
+               <h3>Dog Collar</h3>
+               <p>Rs.550</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product" data-name="Dog Collar" data-price="530">
+               <img src="dog collar2.jpeg" alt="dog collar" >
+               <h3>Dog Collar</h3>
+               <p>Rs.530</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Collar" data-price="550">
+               <img src="dog collar3.jpeg" alt="dog collar" >
+               <h3>Dog Collar</h3>
+               <p>Rs.550</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Harness" data-price="600">
+               <img src="dog harness.jpeg" alt="dog harness" >
+               <h3>Dog Harness</h3>
+               <p>Rs.600</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Harness" data-price="660">
+               <img src="dog harness1.jpeg" alt="dog harness" >
+               <h3>Dog Harness</h3>
+               <p>Rs.660</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Harness" data-price="610">
+               <img src="dog harness1.jpeg" alt="dog harness" >
+               <h3>Dog Harness2</h3>
+               <p>Rs.610</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Leash" data-price="500">
+               <img src="dog leash.jpeg" alt="dog leash" >
+               <h3>Dog Leash</h3>
+               <p>Rs.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Leash" data-price="450">
+               <img src="dog leash1.jpeg" alt="dog leash" >
+               <h3>Dog Leash</h3>
+               <p>Rs.450</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Leash" data-price="550">
+               <img src="dog leash2.jpeg" alt="dog leash" >
+               <h3>Dog Leash</h3>
+               <p>Rs.550</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Toy" data-price="450">
+               <img src="dog toy.jpeg" alt="dog toy" >
+               <h3>Dog Toy</h3>
+               <p>Rs.450</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product "data-name="Dog Toy" data-price="350">
+               <img src="dog toy1.jpeg" alt="dog toy" >
+               <h3>Dog Toy</h3>
+               <p>Rs.350</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Toy" data-price="550">
+               <img src="dog toy2.jpeg" alt="dog toy" >
+               <h3>Dog Toy</h3>
+               <p>Rs.550</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Dog Toy" data-price="600">
+               <img src="dog toy3.jpeg" alt="dog toy" >
+               <h3>Dog Toy</h3>
+               <p>Rs.600</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Kennel" data-price="5500">
+               <img src="kennel.jpeg" alt="dog kennel" >
+               <h3>Kennel</h3>
+               <p>Rs.5500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div><div class="product " data-name="Kennel" data-price="6000">
+               <img src="kennel1.jpeg" alt="dog kennel" >
+               <h3>Kennel</h3>
+               <p>Rs.6000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Kennel" data-price="7000">
+               <img src="kennel2.jpeg" alt="dog kennel" >
+               <h3>Kennel</h3>
+               <p>Rs.7000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Kennel" data-price="7400">
+               <img src="kennel3.jpeg" alt="dog kennel" >
+               <h3>Kennel</h3>
+               <p>Rs.7400</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Play Pen" data-price="5000">
+               <img src="play pen.jpeg" alt="dog playpen" >
+               <h3>Dog Playpen</h3>
+               <p>Rs.5000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Play Pen" data-price="4000">
+               <img src="play pen1.jpeg" alt="dog playpen" >
+               <h3>Dog Playpen</h3>
+               <p>Rs.4000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Play Pen" data-price="2000">
+               <img src="play pen2.jpeg" alt="dog playpen" >
+               <h3>Dog Playpen</h3>
+               <p>Rs.2000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Play Pen" data-price="3000">
+               <img src="play pen3.jpeg" alt="dog playpen" >
+               <h3>Dog Playpen</h3>
+               <p>Rs.3000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Sylcon Bone" data-price="350">
+               <img src="sylcon bone.jpeg" alt="bone" >
+               <h3>Sylcon Bone</h3>
+               <p>Rs.350</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Sylcon Bone" data-price="450">
+               <img src="sylcon bone1.jpeg" alt="bone" >
+               <h3>Sylcon Bone</h3>
+               <p>Rs.450</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Sylcon Bone" data-price="300">
+               <img src="sylcon bone2.jpeg" alt="bone" >
+               <h3>Sylcon Bone</h3>
+               <p>Rs.300</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Chew Bone" data-price="350">
+               <img src="chew bones.jpeg" alt="chew bone" >
+               <h3>Chew Bone</h3>
+               <p>Rs.350</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Chew Bone" data-price="350">
+               <img src="chew bone1.jpeg" alt="chew bone" >
+               <h3>Chew Bone</h3>
+               <p>Rs.350</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+          </div>
+          <h2>For your Cat</h2>
+          <div id="cat"  class="cat-container">
+          <div class="product " data-name="Cat Collar" data-price="500">
+               <img src="cat collar.jpeg" alt="cat collar" >
+               <h3>Cat Collar</h3>
+               <p>Rs.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Collar" data-price="450">
+               <img src="cat collar1.jpeg" alt="cat collar" >
+               <h3>Cat Collar</h3>
+               <p>Rs.450</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Collar" data-price="300">
+               <img src="cat collar2.jpeg" alt="cat collar" >
+               <h3>Cat Collar</h3>
+               <p>Rs.300</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Collar" data-price="550">
+               <img src="cat collar3.jpeg" alt="cat collar" >
+               <h3>Cat Collar</h3>
+               <p>Rs.550</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Harness" data-price="700">
+               <img src="cat harness.jpeg" alt="cat harness" >
+               <h3>Cat Harness</h3>
+               <p>Rs.700</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Harness" data-price="500">
+               <img src="cat harness1.jpeg" alt="cat harness" >
+               <h3>Cat Harness</h3>
+               <p>Rs.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Harness" data-price="750">
+               <img src="cat harness2.jpeg" alt="cat harness" >
+               <h3>Cat Harness</h3>
+               <p>Rs.750</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Harness" data-price="710">
+               <img src="cat harness3.jpeg" alt="cat harness" >
+               <h3>Cat Harness</h3>
+               <p>Rs.710</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Toy" data-price="300">
+               <img src="cat toy1.jpeg" alt="cat toy" >
+               <h3>Cat Toy</h3>
+               <p>Rs.300</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Toy" data-price="350">
+               <img src="cat toy2.jpeg" alt="cat toy" >
+               <h3>Cat Toy</h3>
+               <p>Rs.350</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Cat Toy" data-price="250">
+               <img src="cat toy3.jpeg" alt="cat toy" >
+               <h3>Cat Toy</h3>
+               <p>Rs.250</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           </div>
+           <h2>For your Bird</h2>
+           <div id="bird" class="bird-container">
+               <div class="product " data-name="Bird cage" data-price="3000">
+                   <img src="bird cage.jpeg" alt="bird cage" >
+                   <h3>Bird Cage</h3>
+                   <p>Rs.3000</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Bird cage" data-price="3500">
+                   <img src="bird cage1.jpeg" alt="bird cage" >
+                   <h3>Bird Cage</h3>
+                   <p>Rs.3500</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Bird cage" data-price="2500">
+                   <img src="bird cage2.jpeg" alt="bird cage" >
+                   <h3>Bird Cage</h3>
+                   <p>Rs.2500</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Bird Toy" data-price="300">
+                   <img src="bird toy.jpeg" alt="bird toy" >
+                   <h3>Bird Toy</h3>
+                   <p>Rs.300</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Bird Toy" data-price="350">
+                   <img src="bird toy1.jpeg" alt="bird toy" >
+                   <h3>Bird Toy</h3>
+                   <p>Rs.350</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Bird Toy" data-price="300">
+                   <img src="bird toy2.jpeg" alt="bird toy" >
+                   <h3>Bird Toy</h3>
+                   <p>Rs.300</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+          </div>
+          <h2>For your Fish</h2>
+          <div id="fish"class="fish-container">
+           <div class="product " data-name="Fish Tank" data-price="5000">
+               <img src="aquarium outlet.jpeg" alt="aquarium outlet" >
+               <h3>Aquarium outlet</h3>
+               <p>Rs.5000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Tank" data-price="5500">
+               <img src="fish tank.jpeg" alt="fish tank">
+               <h3>Fish Tank</h3>
+               <p>RS.5500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Tank" data-price="1500">
+               <img src="fish tank1.jpeg" alt="fish tank">
+               <h3>Fish Tank</h3>
+               <p>RS.1500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Tank" data-price="5000">
+               <img src="fish tank2.jpeg" alt="fish tank">
+               <h3>Fish Tank</h3>
+               <p>RS.5000</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Tank" data-price="600">
+               <img src="fish toy.jpeg" alt="fish toy">
+               <h3>Fish toy</h3>
+               <p>RS.600</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Toy" data-price="500">
+               <img src="fish toy1.jpeg" alt="fish toy">
+               <h3>Fish Toy</h3>
+               <p>RS.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Toy" data-price="500">
+               <img src="fish toy2.jpeg" alt="fish toy">
+               <h3>Fish Toy</h3>
+               <p>RS.500</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           <div class="product " data-name="Fish Toy" data-price="300">
+               <img src="fish toy3.jpeg" alt="fish toy">
+               <h3>Fish Toy</h3>
+               <p>RS.300</p>
+               <button class="cart-button">Add to Cart</button>
+           </div>
+           </div>
+           <h2>For your Hamster</h2>
+           <div id="hamster" class="hamster-container">
+               <div class="product" data-name="Hamster Cage" data-price="5700">
+                   <img src="hamster cage.jpeg" alt="hamster cage">
+                   <h3>Hamster Cage</h3>
+                   <p>RS.5700</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product" data-name="Hamster Cage" data-price="2300">
+                   <img src="hamster cage1.jpeg" alt="hamster cage">
+                   <h3>Hamster Cage</h3>
+                   <p>RS.2300</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Hamster Toy" data-price="700">
+                   <img src="hamster toy.jpeg" alt="hamster toy">
+                   <h3>Hamster Toy</h3>
+                   <p>RS.700</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Hamster Toy" data-price="400">
+                   <img src="hamster toy1.jpeg" alt="hamster toy">
+                   <h3>Hamster Toy</h3>
+                   <p>RS.400</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+               <div class="product " data-name="Hamster Toy" data-price="700">
+                   <img src="hamster toy2.jpeg" alt="hamster toy">
+                   <h3>Hamster Toy</h3>
+                   <p>RS.700</p>
+                   <button class="cart-button">Add to Cart</button>
+               </div>
+           </div>
+     </div>
+<script src="script.js"></script> 
+</body>
+</html>

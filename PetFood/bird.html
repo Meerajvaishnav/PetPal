@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Bird Food:Buy Food for birds</title>
+    </head>
+        <body>
+            <style>
+                 .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(168, 211, 212, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-sizing: border-box;
+            z-index: 1;
+          }
+          .navbar a {
+            color: #0e6820;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 1em;
+          }
+          .navbar a:hover {
+            color: #982020;
+          }
+            </style>
+            <nav class="navbar">
+                <a href="homepage.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="servise.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Account</a>
+              </nav>
+              <br><br><br><br><br>
+            <div id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <div class="image-container">
+                <img src="https://www.mypetneedsthat.com/wp-content/uploads/2018/08/top-5-smartest-pet-birds.jpg" alt="Bird">
+                <div class="overlay-text">Bird Food</div>
+              </div>
+            <div class="box-row">
+                <div class="box-cloumn">
+                        <img src="https://supertails.com/cdn/shop/products/Frame1-2021-10-28T151854.443_1_1.png?v=1696632364" alt="Versele Laga Prestige" width="300" height="300">
+                        <h3>Versele Laga Prestige Food<br> For Parrots</h3><h2 class="brown-text">₹720</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Versele Laga Prestige',720)" style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1_735fa65f-2f7b-4bad-96b3-646ac8a9e075_1.png?v=1712312707" alt="ZuPreem Fruit Blend" width="270" height="300">
+                    <h3>ZuPreem Fruit Blend Bird Food for<br> Small Birds<br></h3><h2 class="brown-text">₹312</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('ZuPreem Fruit Blend',312)"  style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://supertails.com/cdn/shop/products/840301.png?v=1696645171" alt="ZuPreem FruitBlend" width="300" height="300">
+                    <h3>ZuPreem FruitBlend Flavor with Natural<br> Flavors Avian Diets Large Bird Food</h3><h2 class="brown-text">₹1,188</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('ZuPreem FruitBlend',1188)" style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-02-17T191711.053_1.png?v=1696544760" alt="JiMMy Exclusive Daily Mix Parrot Food" width="300" height="300">
+                    <h3>JiMMy Exclusive Daily Mix Parrot Food<br><br></h3><h2 class="brown-text">₹450</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('JiMMy Exclusive Daily Mix Parrot Food',450)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2021-10-28T153556.557_1.png?v=1696632357" alt="Versele Laga Prestige" width="300" height="300">
+                    <h3>Versele Laga Prestige Food <br>For Big Parakeets</h3><h2 class="brown-text">₹608</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Versele Laga Prestige',608)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-02-17T191240.908_1.png?v=1696544661" alt="JiMMy Exclusive Daily Mix Budgies" width="300" height="300">
+                    <h3>JiMMy Exclusive Daily Mix <br>Budgies Bird Food</h3><h2 class="brown-text">₹240</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('JiMMy Exclusive Daily Mix Budgies',240)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2021-10-29T105409.713_1.png?v=1696632683" alt="Vitapol Economic Food" width="300" height="300">
+                    <h3>Vitapol Economic Food <br>for Budgies</h3><h2 class="brown-text">₹520</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Vitapol Economic Food for Budgies',520)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-02-17T194950.745_1.png?v=1696544946" alt="JiMMy Pride Parrot Food" width="300" height="300">
+                    <h3>JiMMy Pride Parrot Food<br><br></h3><h2 class="brown-text">₹690</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('JiMMy Pride Parrot Food',690)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-02-17T193012.983_1.png?v=1696544854" alt="JiMMy Panchee Pick Budgies" width="300" height="300">
+                    <h3>JiMMy Panchee Pick Budgies Bird Food</h3><h2 class="brown-text">₹410</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('JiMMy Panchee Pick Budgies Bird Food',410)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-12-23T223654.479.png?v=1696422777" alt="Taiyo Petslife Mynah Bird Food" width="300" height="300">
+                    <h3>Taiyo Petslife Mynah Bird Food</h3><h2 class="brown-text">₹450</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Taiyo Petslife Mynah Bird Food',450)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-02-17T194144.813_1.png?v=1696544886" alt="JiMMy Panchee Pick Cockatiel Bird Food" width="300" height="300">
+                    <h3>JiMMy Panchee Pick Cockatiel Bird Food</h3><h2 class="brown-text">₹380</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('JiMMy Panchee Pick Cockatiel Bird Food',380)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-12-23T222851.094.png?v=1696613464" alt="Taiyo Petslife Hand Feeding Baby Bird Food" width="300" height="300">
+                    <h3>Taiyo Petslife Hand Feeding Baby Bird Food</h3><h2 class="brown-text">₹855</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Taiyo Petslife Hand Feeding Baby Bird Food',855)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1-2022-12-23T224509.586.png?v=1696420943" alt="Taiyo Petslife Fruit Mix Medium Bird Food" width="300" height="300">
+                    <h3>Taiyo Petslife Fruit Mix<br> Medium Bird Food</h3><h2 class="brown-text">₹130</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Taiyo Petslife Fruit Mix Medium Bird Food',130)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/TRUELOVE-BOOT_6_74140ffd-6488-4d37-a1d1-af60c35a66ea.png?v=1696433562" alt="Vitapol Karmeo Premium Complete Budgie Food" width="300" height="300">
+                    <h3>Vitapol Karmeo Premium <br>Complete Budgie Food</h3><h2 class="brown-text">₹260</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Vitapol Karmeo Premium Complete Budgie Food',260)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/files/Frame10978_cbd799ad-4957-4ad6-a27b-0754c25cc2da.png?v=1706334256" alt="Boltz Striped Sunflower Seeds Bird Food" width="300" height="300">
+                    <h3>Boltz Striped Sunflower <br>Seeds Bird Food</h3><h2 class="brown-text">₹400</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Boltz Striped Sunflower Seeds Bird Food',400)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://supertails.com/cdn/shop/products/Frame1_e41642b1-31d8-4697-b8c5-a84b9f148768_1.png?v=1696632556" alt="Versele Laga Sunflower Seeds Striped for Birds" width="300" height="300">
+                    <h3>Versele Laga Sunflower Seeds <br>Striped for Birds</h3><h2 class="brown-text">₹390</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Versele Laga Sunflower Seeds Striped for Birds',390)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <script>
+        var cartItems = [];
+        function cart(itemName, itemPrice) {
+            var item = {
+                name: itemName,
+                price: itemPrice
+            };
+            cartItems.push(item);
+            updateCartIcon();
+            alert("Item added to cart");
+        }
+        function updateCartIcon() {
+            var cartCountSpan = document.getElementById("cart-count");
+            cartCountSpan.textContent = cartItems.length;
+        }
+
+        function displayCartItems() {
+            var cartContent = "";
+            if (cartItems.length === 0) {
+                cartContent = "Your cart is empty.";
+            } else {
+                cartContent = "Items in your cart:\n";
+                cartItems.forEach(function(item, index) {
+                    cartContent += (index + 1) + ". " + item.name + " - ₹" + item.price + "\n";
+                });
+            }
+            alert(cartContent);
+        }
+        var cartIcon = document.getElementById("cart-icon");
+        cartIcon.addEventListener("click", displayCartItems);
+            </script>
+        </body>
+</html>

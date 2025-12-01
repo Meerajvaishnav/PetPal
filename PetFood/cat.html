@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Cat Food:Buy Food for Cats</title>
+    </head>
+        <body>
+            <style>
+                .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(168, 211, 212, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-sizing: border-box;
+            z-index: 1;
+          }
+          .navbar a {
+            color: #0e6820;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 1em;
+          }
+          .navbar a:hover {
+            color: #982020;
+          }
+        
+            </style>
+            <nav class="navbar">
+                <a href="homepage.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="servise.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Account</a>
+              </nav>
+              <br><br><br><br><br>
+            <div id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <video width="1500" height="300" autoplay loop muted>
+                <source src="https://zigly-happy-pets.s3.ap-south-1.amazonaws.com/videos/2023-09-10-kitty-pawrty-supplies-desktop.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+            <div class="box-row">
+                <div class="box-column">
+                        <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/w/h/whiskas_tasty_mix_tuna_with_kanikama_carrot_in_gravy_adult_1_year_wet_cat_food_1.jpg" alt="Tasty Mix" width="300" height="300">
+                        <h3>Whiskas Tasty Mix Tuna <br>Adult Wet Cat Food<br></h3><h2 class="brown-text">₹2,151</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Tasty Mix',2151)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/s/h/shwepckgchik00070gen_2__1.png" alt="Sheba" width="270" height="300">
+                    <h3>Sheba Rich Premium Kitten (2-12 Months)<br> Chicken Loaf Fine Wet Food - 70 gm<br></h3><h2 class="brown-text">₹1,880</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Sheba',1880)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/b/e/bellota_tuna_and_chicken_jelly_wet_cat_food_85_gm.jpg" alt="Bellota" width="300" height="300">
+                    <h3>Bellota Tuna And Chicken <br>Jelly Wet Cat Food - 85 gm<br></h3><h2 class="brown-text">₹770</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Bellota',770)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/k/e/kennel_kitchen_chicken_with_tuna_in_gravy_wet_cat_food_-_70_gm.jpg" alt="Kennel" width="300" height="300">
+                    <h3>Kennel Kitchen Chicken with <br>Tuna in Gravy Wet Cat Food - 85 gm<br></h3><h2 class="brown-text">₹792</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Kennel',792)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/r/o/royal_canin_instinctive_loaf_kitten_wet_cat_food_-_85_gm.jpg" alt="Royal Canin" width="300" height="300">
+                    <h3>Royal Canin Instinctive Loaf <br>Kitten Wet Cat Food - 85 gm<br></h3><h2 class="brown-text">₹1,800</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Royal Canin',1800)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/f/a/farmina_n_d_grain_free_prime_chicken_pomegranate_dry_kitten_food_-_300_gm.jpg" alt="Farmina" width="300" height="300">
+                    <h3>Farmina N&D Grain Free Prime Chicken<br> & Pomegranate Dry Kitten Food<br></h3><h2 class="brown-text">₹1,700</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Farmina',1700)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/m/a/matisse_kitten_1-12_months_dry_food_-_1.5_kg.jpg" alt="Matisse Kitten" width="300" height="300">
+                    <h3>Matisse Kitten (1-12 Months) Dry Food<br><br></h3><h2 class="brown-text">₹800</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Matisse Kitten',800)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/k/i/kitty_yums_adult_dry_cat_food-3_kg.jpg" alt="Kitty Yums" width="300" height="300">
+                    <h3>Kitty Yums Adult Dry Cat Food<br><br></h3><h2 class="brown-text">₹750</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Kitty Yums',750)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/s/h/sheba_irresistible_chicken_kitten_and_adult_dry_cat_food-7.jpg" alt="Sheba" width="300" height="300">
+                    <h3>Sheba Irresistible Chicken Kitten<br> and Adult Dry Cat Food<br></h3><h2 class="brown-text">₹550</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Sheba',550)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/w/h/whiskas_kitten_2-12_months_ocean_fish_with_milk_dry_food-_1.1_kg.jpg" alt="Whiskas Kitten" width="300" height="300">
+                    <h3>Whiskas Kitten (2-12 months)<br> Ocean Fish Dry Food<br></h3><h2 class="brown-text">₹900</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Whiskas Kitten',900)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/r/o/royal_canin_intense_beauty_adult_wet_cat_food_-_85_gm.jpg" alt="Royal Canin" width="300" height="300">
+                    <h3>Royal Canin Intense Beauty <br>Adult Wet Cat Food - 85 gm<br></h3><h2 class="brown-text">₹999</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Royal Canin',999)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/4/1/418roxlc5vl.jpg" alt="Bellotta" width="300" height="300">
+                    <h3>Bellotta Tuna in Gravy <br>Wet Cat Food Tin - 185 gm<br></h3><h2 class="brown-text">₹1,500</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Bellotta',1500)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/a/p/applaws_chicken_breast_with_liver_in_a_tasty_jelly_adult_wet_cat_food_-_70_gm-1.jpg" alt="Applaws" width="300" height="300">
+                    <h3>Applaws Chicken Breast with Liver in a<br> Tasty Jelly Adult Wet Cat Food - 70 gm<br></h3><h2 class="brown-text">₹2,200</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Applaws',2200)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/l/i/light-gravy-packshot-pouch-b1n.png" alt="Royal Canin" width="300" height="300">
+                    <h3>Royal Canin Light Weight Care<br> Wet Cat Food 85 Gm<br></h3><h2 class="brown-text">₹1,100</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Royal Canin',1100)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/Zig0A1599.jpg" alt="Me-O Mackeral" width="300" height="300">
+                    <h3>Me-O Mackeral In Jelly<br> Adult Wet Cat Food - 80 gm<br></h3><h2 class="brown-text">₹850</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Me-O Mackeral',850)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.zigly.com/media/catalog/product/cache/743ca7d646b949dcc48b9fdeed3857e9/f/a/farmina_n_d_grain_free_ocean_herring_orange_adult_dry_cat_food_-_1.5_kg_1.jpg" alt="Farmina" width="300" height="300">
+                    <h3>Farmina N&D Grain Free Prime Herring <br> &Orange Adult Dry Cat Food<br></h3><h2 class="brown-text">₹900</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Farmina',900)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <script>
+                var cartItems = [];
+                function cart(itemName, itemPrice) {
+                    var item = {
+                        name: itemName,
+                        price: itemPrice
+                    };
+                    cartItems.push(item);
+                    updateCartIcon();
+                    alert("Item added to cart");
+                }
+                function updateCartIcon() {
+                    var cartCountSpan = document.getElementById("cart-count");
+                    cartCountSpan.textContent = cartItems.length;
+                }
+        
+                function displayCartItems() {
+                    var cartContent = "";
+                    if (cartItems.length === 0) {
+                        cartContent = "Your cart is empty.";
+                    } else {
+                        cartContent = "Items in your cart:\n";
+                        cartItems.forEach(function(item, index) {
+                            cartContent += (index + 1) + ". " + item.name + " - ₹" + item.price + "\n";
+                        });
+                    }
+                    alert(cartContent);
+                }
+                var cartIcon = document.getElementById("cart-icon");
+                cartIcon.addEventListener("click", displayCartItems);
+            </script>
+        </body>
+</html>

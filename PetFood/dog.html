@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Dog Food:Buy Food for Dogs</title>
+    </head>
+        <body>
+            <style>
+                .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(168, 211, 212, 0.9);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            box-sizing: border-box;
+            z-index: 1;
+          }
+          .navbar a {
+            color: #0e6820;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin-right: 1em;
+          }
+          .navbar a:hover {
+            color: #982020;
+          }
+        
+            </style>
+             <nav class="navbar">
+                <a href="homepage.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="servise.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="#">Account</a>
+              </nav>
+              <br><br><br><br><br>
+            <div id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <video width="1500" height="300" autoplay loop muted>
+                <source src="https://zigly-happy-pets.s3.ap-south-1.amazonaws.com/videos/2023-09-10-drool-worthy-treats-desktop.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
+            <div class="box-row">
+                <div class="box-cloumn">
+                        <img src="https://supervet.in/wp-content/uploads/2021/04/A-26.png" alt="Pedigree" width="300" height="300">
+                        <h3>Pedigree 100% Vegetarian Dry Dog<br> Food For Adult Dogs<br></h3><h2 class="brown-text">₹2,151</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Pedigree',2151)" style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://supertails.com/cdn/shop/files/100_VegAlllifestage_1.2kg.png?v=1712120662" alt="Drools" width="270" height="300">
+                    <h3>Drools 100% Vegetarian Puppy<br> and Adult Dog Dry Food (All Life Stages)<br></h3><h2 class="brown-text">₹1,880</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Drools',1880)"  style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://petsleague.com/media/catalog/product/cache/25c0b311d2919a030391b1a4f4b2475d/h/i/himalaya-healthy-pet-food-puppy-chicken-rice_2.jpg" alt="Himalaya" width="300" height="300">
+                    <h3>Himalaya Chicken & Rice Healthy <br>Pet Puppy Dry Food<br></h3><h2 class="brown-text">₹770</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Himalaya Chicken & Rice Healthy Pet Puppy Dry Food',770)" style="height:50px; width:300px">
+                </div>
+                <div class="box-cloumn">
+                    <img src="https://www.poochles.in/cdn/shop/files/srikanth_14_7cc3e292-c5b3-4547-b1c3-85f2481171e1.png?v=1700482103" alt="Fidele" width="300" height="300">
+                    <h3>Fidele Plus Adult Small &<br> Medium Dog Dry Food<br></h3><h2 class="brown-text">₹792</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Fidele',792)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/647730-center-1" alt="ProPlan" width="300" height="300">
+                    <h3>Pro Plan Chicken Large <br>Puppy Dry Food<br></h3><h2 class="brown-text">₹1,800</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('ProPlan',1800)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://m.media-amazon.com/images/I/718h1rnJAJL._AC_UF1000,1000_QL80_.jpg" alt="Kibbles n Bits" width="300" height="300">
+                    <h3>Kibbles n Bits Savory Beef &<br> Chicken Flavors For Adult Dogs<br></h3><h2 class="brown-text">₹1,700</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Kibbles n Bits',1700)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://www.hypropremium.com.au/wp-content/uploads/2022/01/11795-Hypro-20kg-3D_chicken-duck-min-768x1231.png" alt="Canine Creek" width="300" height="300">
+                    <h3>Canine Creek Ultra <br>Premium Starter Puppy Dry Dog Food<br></h3><h2 class="brown-text">₹800</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Canine Creek',800)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://res.cloudinary.com/drharveys/image/upload/c_scale,dpr_3.0,f_auto,q_auto,w_200/v1692628202/brand_images/461-garden-veggies-grain-free.jpg" alt="Dr Harveys" width="300" height="300">
+                    <h3>Dr.Harvey's Beef And Garden<br> Veggies Dog Food<br></h3><h2 class="brown-text">₹750</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Dr Harveys',750)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://m.media-amazon.com/images/I/71YR0J+VfIL._AC_UF1000,1000_QL80_.jpg" alt="Pedigree" width="300" height="300">
+                    <h3>Pedigree Barbecued Chicken<br> Meat Jerky Adult Dog Treats<br></h3><h2 class="brown-text">₹550</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Pedigree',550)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://happydog_en_sb.cstatic.io/600x600/f/69110/600x600/88f74c84d2/hd-desktop-stage-produkt-ostersnack_24.png" alt="Happy Dog" width="300" height="300">
+                    <h3>Happy Dog Oster <br>Snack For Dogs<br></h3><h2 class="brown-text">₹900</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Happy Dog',900)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://assets.shop.loblaws.ca/products/21359778/b2/en/front/21359778_front_a06_@2.png" alt="Pedigree" width="300" height="300">
+                    <h3>Pedigree Real Beef <br>Chopped For Adult Dogs<br></h3><h2 class="brown-text">₹999</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Pedigree',999)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://cdn.poochandmutt.co.uk/cdn/shop/products/GLOBAL_PRODUCT_IMAGES_Primal-10kg_672x.jpg?v=1664872537" alt="Pooch & Mutt" width="300" height="300">
+                    <h3>Pooch & Mutt Dry Dog <br>Food For All Ages<br></h3><h2 class="brown-text">₹1,500</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Pooch & Mutt',1500)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <div class="box-row">
+                <div class="box-column">
+                    <img src="https://www.pedigree.com/cdn-cgi/image/width=600,height=600,f=auto,quality=90/sites/g/files/fnmzdf3076/files/migrate-product-files/images/iepihghccmughegnlktp.png" alt="Pedigree" width="300" height="300">
+                    <h3>Pedigree Chicken &<br>Vegetable Flavor Puppy Food<br></h3><h2 class="brown-text">₹2,200</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Pedigree',2200)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://cdn.shopify.com/s/files/1/0565/8021/0861/files/01_bbb11f04-3fd9-44c4-9e0b-db18083f460f.png?v=1712656612" alt="Purina" width="300" height="300">
+                    <h3>Pro Plan Chicken <br>Medium Adult Dog Dry Food<br></h3><h2 class="brown-text">₹1,100</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Purina',1100)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://i5.walmartimages.com/seo/Canine-Creek-Adult-Dry-Dog-Food-Ultra-Premium_c33eac4e-99c7-429e-9371-903b4b4e4e84.488ae7d68b6adc8888b55192ae13e66d.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Canine Creek" width="300" height="300">
+                    <h3>Canine Creek Ultra Premium<br> Adult Dry Dog Food<br></h3><h2 class="brown-text">₹850</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Canine Creek',850)" style="height:50px; width:300px">
+                </div>
+                <div class="box-column">
+                    <img src="https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/1521691-center-1" alt="Royal Canin" width="300" height="300">
+                    <h3>Royal Canin Mini Puppy<br> Dog Dry Food<br></h3><h2 class="brown-text">₹900</h2><br><input type="SUBMIT" VALUE="Add To Cart" onclick="cart('Royal Canin',900)" style="height:50px; width:300px">
+                </div>
+            </div>
+            <script>
+        var cartItems = [];
+        function cart(itemName, itemPrice) {
+            var item = {
+                name: itemName,
+                price: itemPrice
+            };
+            cartItems.push(item);
+            updateCartIcon();
+            alert("Item added to cart");
+        }
+        function updateCartIcon() {
+            var cartCountSpan = document.getElementById("cart-count");
+            cartCountSpan.textContent = cartItems.length;
+        }
+
+        function displayCartItems() {
+            var cartContent = "";
+            if (cartItems.length === 0) {
+                cartContent = "Your cart is empty.";
+            } else {
+                cartContent = "Items in your cart:\n";
+                cartItems.forEach(function(item, index) {
+                    cartContent += (index + 1) + ". " + item.name + " - ₹" + item.price + "\n";
+                });
+            }
+            alert(cartContent);
+        }
+        var cartIcon = document.getElementById("cart-icon");
+        cartIcon.addEventListener("click", displayCartItems);
+            </script>
+        </body>
+</html>
